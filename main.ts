@@ -1,4 +1,5 @@
 // gta6-meme-x-01 entry v5 (Node 22, standard library only).
+// v5 — "Leonida Express": package-tracking card, DELIVERED after 4,811 days in transit.
 //
 // The entry is the X post itself: a phone lock screen showing eleven
 // years of Rockstar delay notifications, then the one that ends the wait:
