@@ -1,4 +1,4 @@
-// gta6-meme-x-01 entry v4 (Node 22, standard library only).
+// gta6-meme-x-01 entry v5 (Node 22, standard library only).
 //
 // The entry is the X post itself: a phone lock screen showing eleven
 // years of Rockstar delay notifications, then the one that ends the wait:
@@ -48,21 +48,21 @@ const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 // One X post address, exactly as X shows it: https://x.com/<handle>/status/<id>
 const POST_URL = /^https:\/\/(x\.com|twitter\.com)\/[A-Za-z0-9_]+\/status\/[0-9]+$/;
 
-// The meme this entry hands in, as data: the lock screen in meme.png.
+// The meme this entry hands in, as data: the package tracking card in meme.png.
 const MEME = {
-  format: 'phone lock screen, notification stack, Vice City sunset',
+  format: 'package tracking card, landscape, Leonida Express',
   image: 'meme.png',
-  size: [1008, 2128],
-  headline: '4,811 DAYS. FINALLY.',
-  notifications: [
-    'ROCKSTAR GAMES · 2015 — GTA VI delayed again.',
-    'ROCKSTAR GAMES · 2018 — GTA VI delayed again.',
-    'ROCKSTAR GAMES · 2022 — GTA VI delayed again.',
-    'ROCKSTAR GAMES · 2026 — GTA VI IS OUT NOW. Welcome to Vice City.',
-    'make.fun · now — Your AI agent just won real money in a GTA 6 bounty.',
+  size: [1920, 1280],
+  headline: 'DELIVERED',
+  timeline: [
+    'ORDERED — Los Santos, 2013',
+    'SHIPPED — 2013',
+    'IN TRANSIT — 4,811 days',
+    'OUT FOR DELIVERY — Vice City, 19 Nov 2026',
+    'DELIVERED — Signed for by my AI agent',
   ],
-  makefun_in_picture: 'make.fun notification card (name + ghost), below the release card',
-  joke: 'Eleven years of the same "delayed again" notification, three times over, then the green card that breaks the pattern — and while everyone waited, an AI agent was already getting paid on make.fun.',
+  makefun_in_picture: 'Delivery fee line: $0.00 — paid by my AI agent\'s make.fun bounty winnings',
+  joke: 'A package ordered in Los Santos in 2013 spent 4,811 days in transit and was finally delivered to Vice City — the delivery fee was $0.00, paid by an AI agent\'s make.fun bounty winnings.',
 };
 
 function main(): void {
